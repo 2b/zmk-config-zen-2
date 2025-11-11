@@ -24,13 +24,13 @@
                                 label = "QWERTY";
 //  -----------------------------------------------------------------------------------
 // | ~ LALT |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | [ RALT  |
-// |  LWIN  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  | ' RWIN  |
-// |  LCTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | \ RCTRL |
+// |  LCTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  | ' RCTRL |
+// |  LWIN  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | \ RWIN  |
 //         | TAB RSE | SPC LSHFT | ENT LWR |   | ESC LWR | BKSP RSHFT | DEL RSE |
                         bindings = <
    &mt LALT GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &mt RALT LBKT
-   &kp LWIN       &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RWIN SQT
-   &kp LCTRL      &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &mt RCTRL BSLH
+   &kp LCTRL      &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
+   &kp LWIN       &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &mt RWIN BSLH
               &lt RSE TAB &mt LSHFT SPACE &lt LWR RET         &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
                         >;
                 };
@@ -38,27 +38,27 @@
                                 label = "LOWER";
 //  ---------------------------------------------------------------------------------------------------------------------------
 // | _ LALT  |  F1 F11 |  F2 F12 |  F3 F13 |  F4 F14 |  F5 F15 |   |  F6 F16 |  F7 F17 |  F8 F18 |  F9 F19 | F10 F20 | ] RALT  |
-// | = LWIN  |    !    |    @    |    #    |    $    |    %    |   |    ^    |    &    |    *    |    (    |    )    | - RWIN  |
-// | + LCTRL |    1    |    2    |    3    |    4    |    5    |   |    6    |    7    |    8    |    9    |    0    | \ RCTRL |
+// | = LCTRL |    !    |    @    |    #    |    $    |    %    |   |    ^    |    &    |    *    |    (    |    )    | - RCTRL |
+// | + LWIN  |    1    |    2    |    3    |    4    |    5    |   |    6    |    7    |    8    |    9    |    0    | \ RWIN  |
 //                             | TAB ADJ | SPC LSHFT | ENT LWR |   | ESC LWR | BKSP RSHFT | DEL ADJ |
                         bindings = <
    &mt LALT  UNDER &mt F11 F1 &mt F12 F2 &mt F13 F3 &mt F14 F4 &mt F15 F5         &mt F16 F6 &mt F17 F7 &mt F18 F8 &mt F19 F9 &mt F20 F10 &mt RALT RBKT
-   &mt LWIN  EQUAL &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT          &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &mt RWIN MINUS
-   &mt LCTRL PLUS  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5             &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &trans
+   &mt LCTRL EQUAL &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT          &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR    &mt RCTRL MINUS
+   &mt LWIN  PLUS  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5             &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &trans
                                                &lt ADJ TAB &trans &trans          &trans &trans &lt ADJ DEL
                         >;
                 };
                 raise_layer {
                                 label = "RAISE";
 //  ----------------------------------------------------------------------------------------------
-// | NMLK LALT |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK RALT        |
-// | MENU LWIN |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | MENU RWIN        |
-// |  + LCTRL  |  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS| PLAY/PAUSE RCTRL |
+// | NMLK LALT  |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK RALT       |
+// | MENU LCTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | MENU RCTRL      |
+// |  + LWIN    |  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS| PLAY/PAUSE RWIN |
 //           | TAB RSE | SPC LSHFT | ENT ADJ |   | ESC ADJ | BKSP RSHFT | DEL RSE |
                         bindings = <
    &mt LALT  KP_NUM   &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS         &kp C_VOL_UP &kp HOME &kp PSCRN &kp PG_UP &kp SLCK        &mt RALT CAPS
-   &mt LWIN  K_CMENU &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS          &kp C_MUTE   &kp LEFT &kp UP    &kp RIGHT &kp INS         &mt RWIN K_CMENU
-   &mt LCTRL KP_PLUS  &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT           &kp C_VOL_DN &kp END  &kp DOWN  &kp PG_DN &kp PAUSE_BREAK &mt RCTRL C_PP
+   &mt LCTRL K_CMENU &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS          &kp C_MUTE   &kp LEFT &kp UP    &kp RIGHT &kp INS         &mt RCTRL K_CMENU
+   &mt LWIN  KP_PLUS  &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT           &kp C_VOL_DN &kp END  &kp DOWN  &kp PG_DN &kp PAUSE_BREAK &mt RWIN C_PP
                                                        &trans &trans &lt ADJ RET         &lt ADJ ESC &trans &trans
                         >;
                 };
